@@ -18,8 +18,8 @@ for(let i = 0; i < play_slots; i++){
 }
 
 api = {
-    url: 'http://api.giphy.com/v1/gifs',
-    uploadURL: 'http://upload.giphy.com/v1/gifs',
+    url: 'https://api.giphy.com/v1/gifs',
+    uploadURL: 'https://upload.giphy.com/v1/gifs',
     key: 'Zf45k9BsM730LcwnDxXFg7oesOYPcWBq'
 }
 
