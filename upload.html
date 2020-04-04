@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link id="stylesheet" rel="stylesheet" href="css/light.css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700,700i&display=swap" rel="stylesheet">
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <title>Cargar GIF</title>
+</head>
+<body>
+
+    <header>
+        <div id='title-bar' class='main-title-bar gradient flex align-center'>
+            ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803
+        </div>
+    </header>
+
+    <section id="header" class="x-pad extra-pad">
+        <div id='toolbar' class="toolbar y-pad flex justify-start align-center">
+            <div id="arrow-back" class="arrow-back"></div>
+            <div id="logo" class="logo"></div>
+        </div>
+    </section>
+
+    <section id="confirm-dialog" class="flex justify-center">
+        <div class="confirm-dialog">
+            <div id="dialog-title-bar" class="title-bar dialog-title-bar flex align-center">Crear Guifos</div>
+            <div id="dialog-body" class="dialog-body flex">
+                <div>
+                    <img src="img/window_img.png">
+                </div>
+                <div class="dialog-body-right">
+                    <span class="bold">Aquí podrás crear tus propios guifos</span>
+                    <p>Crear tu <span class="bold italic">guifo</span> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son:</p>
+                    <p><span class="bold">1)</span> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)</p>
+                    <p><span class="bold">2)</span> Capturar tu momento guifo</p>
+                    <p><span class="bold">3)</span> Revisar el momento</p>
+                    <p><span class="bold">4)</span> Listo para subir y compartir!</p>
+                    <p>Quieres comenzar a crear tu <span class="bold italic">guifo</span> ahora?</p>
+                </div>
+            </div>
+            <div class="dialog-button-container">
+                <div id="dialog-button-cancel" class="dialog-button light-button">Cancelar</div>
+                <div id="dialog-button-start" class="dialog-button strong-button">Comenzar</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="captura" class="flex justify-center">
+        <div class="captura-dialog">
+            <div id="capture-dialog-title-bar" class="title-bar dialog-title-bar flex align-center">Un Chequeo Antes de Empezar</div>
+            <div id="camera-image" class="camera-image">
+                <img id="preview-container" class="preview-container">
+                <video id="video-stream" class="video-stream"></video>
+                <div id="upload-screen" class="upload-screen">
+                    <img src="img/globe_img.png">
+                    <span class="uploading-text">Estamos subiendo tu guifo...</span>
+                    <div id="upload-bar" class="upload-bar"></div>
+                    <span class="uploading-subtext">Tiempo restante: <s>38 años</s> algunos minutos</span>
+                </div>
+            </div>
+            <div id="captura-button-container" class="captura-button-container">
+                <div id="captura-button" class="captura-button-both">
+                    <div id="camera-button" class="camera-button"><div class="camera"></div></div>
+                    <div id="dialog-button-capture" class="captura-button">Capturar</div>
+                </div>
+                <div id="counter" class="counter"><span id="d">00</span>:<span id="h">00</span>:<span id="m">00</span>:<span id="s">00</span></div>
+                <div id="preview-lapse-bar" class="preview-lapse-bar">
+                    <div id="play-button" class="play-button"><div class="play"></div></div>
+                    <div id="lapse-bar" class="lapse-bar"></div>
+                </div>
+                <div id="end-captura-button" class="end-captura-button-both">
+                    <div id="recording-button" class="recording-button"><img src="img/recording.svg"></div>
+                    <div id="dialog-button-capture" class="end-captura-button">Listo</div>
+                </div>
+                <div id="after-captura-buttons" class="after-captura-buttons">
+                    <div id="repetir-captura" class="dialog-button light-button">Repetir Captura</div>
+                    <div id="subir-guifo" class="dialog-button strong-button subir-guifo">Subir Guifo</div>
+                </div>
+                <div id="cancel-button" class="cancel-button dialog-button light-button">Cancelar</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="success" class="success">
+        <div id="success-dialog" class="success-dialog">
+            <div class="success-dialog-title title-bar flex align-center justify-between">
+                <span style="height: 15px;">Gif Subido Con Éxito</span>
+                <img src="./img/close.svg" onmouseup="closeDialog()" class="cross">
+            </div>
+            <div class="success-dialog-body">
+                <div class="success-dialog-body-top">
+                    <div class="success-dialog-preview">
+                        <img id="success-dialog-preview-image" class="success-dialog-preview-image">
+                    </div>
+                    <div class="success-dialog-actions">
+                        <span class="actions-title">Guifo creado con éxito</span>
+                        <div id="copy-link-button" class="dialog-button light-button actions-button">Copiar Enlace Guifo</div>
+                        <div id="download-gif-button" class="dialog-button light-button actions-button">Descargar Guifo</div>
+                    </div>
+                </div>
+                <div class="success-dialog-body-bottom">
+                    <div id="finish-button" class="dialog-button strong-button finish-button">Listo</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mis-guifos" class="content x-pad">
+        <div id="mis-guifos-title-bar" class="subtitle-bar flex align-center extra-pad remove-top-margin">Mis guifos</div>
+        <div id="mis-guifos-container" class="flex justify-start items-container"></div>
+    </section>
+
+    <canvas id="canvas" style="display: none"></canvas>
+
+    <script src="js/upload.js"></script>  
+
+</body>
+</html>

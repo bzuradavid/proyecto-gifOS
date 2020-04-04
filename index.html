@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link id="stylesheet" rel="stylesheet" href="css/light.css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <title>GIFOS</title>
+</head>
+<body>
+    <header>
+        <div id='title-bar' class='main-title-bar gradient flex align-center'>
+            ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803
+        </div>
+    </header>
+
+    <section id="header" class="x-pad">
+        <div id='toolbar' class="toolbar y-pad flex justify-between align-center extra-pad">
+            <div id="logo" class="logo"></div>
+            <div id="button-container" class="button-container flex align-center">
+                <div id="crear-guifos" class="button crear flex align-center justify-center"><span class="underline-first">Crear Guifos</span></div>
+                <div class="flex column">
+                    <div id="elegir-both" class="flex elegir-both">
+                        <div id="elegir-tema" class="button elegir flex align-center justify-center"><span class="underline-first">Elegir tema</span></div>
+                        <div id="expand-arrow" class="button arrow flex align-center justify-center"><div class="arrow-img"></div></div>
+                    </div>
+                    <div class="ddc">
+                        <div id="dropdown" class="dropdown">
+                            <a id="theme-light-button" class="dropdown-button"><span class="underline-first pad-left">Sailor Day</span></a>
+                            <a id="theme-dark-button" class="dropdown-button"><span class="underline-first pad-left">Sailor Night</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="mis-guifos-button" class="mis-guifos underline-first">Mis Guifos</div>
+            </div>
+        </div>
+        <div id="search-bar-container" class="search-bar-container extra-pad">
+            <div id="search-bar" class="search-bar">
+                <div id="search-bar-title" class="search-bar-title gradient flex align-center">Buscar</div>
+                <div id="search-bar-body" class="search-bar-body flex align-center">
+                    <input type="text" id="search-input" onfocusin="search.preview()" onfocusout="search.hide_preview_delay()" class="search-input" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
+                    <div id="search-button" class="search-button disabled flex align-center justify-center">
+                        <div id="lupa" class="lupa lupa-disabled"></div>
+                        <span class="underline-first pad-left">Buscar</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div id="search-bar-extension" class="search-bar extension flex">
+                    <div id="extension-buttons-container" class="extension-buttons-container"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="home" class="content x-pad">
+        <div id="suggested-title-bar" class="subtitle-bar flex align-center extra-pad">Hoy te sugerimos</div>
+        <div id="suggested-container" class="flex justify-between items-container extra-pad"></div>
+        <div id="trending-title-bar" class="subtitle-bar flex align-center extra-pad">Tendencias</div>
+        <div id="trending-container" class="flex justify-between items-container"></div>
+    </section>
+
+    <section id="search" class="content x-pad">
+        <div id="hashtag-container" class="extra-pad"></div>
+        <div id="search-title-bar" class="subtitle-bar flex align-center extra-pad">Resultados de busqueda</div>
+        <div id="search-container" class="flex justify-start items-container"></div>
+        <div id="loader" style="height: 50px; width: 100%;"></div>
+    </section>
+
+    <section id="mis-guifos" class="content x-pad">
+        <div id="mis-guifos-title-bar" class="subtitle-bar flex align-center extra-pad remove-top-margin">Mis guifos</div>
+        <div id="mis-guifos-container" class="flex justify-start items-container"></div>
+    </section>
+
+<script src="js/index.js"></script>  
+</body>
+</html>

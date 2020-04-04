@@ -1,0 +1,277 @@
+
+body {
+    background: #110138;
+}
+.gradient {
+    background: linear-gradient(270deg, #EE3EFE, #2E32FB);
+}
+.main-title-bar {
+    color: white;
+    box-shadow: 0px 1px 0px 0px #110038, 0px -1px 0px 0px #FFF4FD;
+}
+.title-bar {
+    background: linear-gradient(270deg , #EE3EFE, #2E32FB);
+    color: white;
+}
+.logo {
+    background-image: url(../img/gifOF_logo_dark.png);
+}
+.button {
+    background: #EE3EFE;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+.button:hover {
+    background: #CE36DB;
+    outline: 1px dotted black;
+    outline-offset: -4px;
+}
+.elegir-both:hover .elegir {
+    background: #CE36DB;
+    outline: 1px dotted black;
+    outline-offset: -4px;
+}
+.elegir-both:hover .arrow {
+    background: #CE36DB;
+    outline: 1px dotted black;
+    outline-offset: -4px;
+}
+.mis-guifos {
+    color: white;
+}
+.mis-guifos:hover {
+    outline: 1px dotted white;
+}
+.mis-guifos:active {
+    color: #B4B4B4;
+    outline: none;
+}
+.search-bar {
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+.search-bar-title {
+    color: white;
+    box-shadow: inset -2px 0px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+.search-input {
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+.search-input::placeholder {
+    color: #B4B4B4;
+}
+.disabled {
+    background: #B4B4B4;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    color: #8F8F8F;
+}
+.enabled {
+    background: #EE3EFE;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF; 
+    cursor: pointer;
+    color: white;
+}
+.lupa-enabled {
+    background-image: url(../img/lupa_light.svg);
+}
+.lupa-disabled {
+    background-image: url(../img/lupa_inactive_dark.svg);
+}
+.enabled:hover {
+    background: #CE36DB;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    outline: 1px dotted black;
+    outline-offset: -4px;
+}
+.extension-button {
+    background: #CCCCCC;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+.extension-button:hover {
+    outline: 1px dotted black;
+    outline-offset: -4px;
+}
+.dropdown {
+    background: #B4B4B4;
+    border-bottom: 2px solid #8F8F8F;
+    border-right: 2px solid #8F8F8F;
+    border-top: 2px solid #FFFFFF;
+    border-left: 2px solid #FFFFFF;
+}
+.dropdown-button {
+    background: #CCCCCC;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    cursor: pointer;
+}
+.dropdown-button:hover {
+    background: #2E32FB;
+    color: white
+}
+.arrow-img {
+    width: 10px;
+    height: 6px;
+    background-image: url(../img/dropdown_light.svg);
+}
+.subtitle-bar {
+    background: #FFFAFE;
+    border: 1px solid #2E32FB;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
+}
+.gif-title {
+    border-bottom: 3px solid #B4B4B4;
+}
+.suggested-item {
+    background: #B4B4B4;
+    border-top: 2px solid #FFFFFF;
+    border-left: 2px solid #FFFFFF;
+    border-bottom: 2px solid #5C5C5C;
+    border-right: 2px solid #5C5C5C;
+}
+.hashtag {
+    background: #2E32FB;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+    color: white;
+}
+.hashtag:hover {
+    outline: 1px dotted black;
+    outline-offset: -4px;
+    background: #2629CC;
+}
+.ver-mas-button {
+    background: #2E32FB;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -1px -1px 0 0 #284F99, inset 1px 1px 0 0 #FFFFFF;
+}
+.ver-mas-button:hover {
+    outline: 1px dotted black;
+    outline-offset: -4px;
+    background: #2629CC;
+}
+.confirm-dialog {
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+.dialog-title-bar {
+    margin: 2px 2px 0 2px;
+}
+.dialog-button {
+    border: 1px solid #B4B4B4;
+    box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+    cursor: pointer;
+}
+.light-button {
+    background: #FFF4FD;
+}
+.strong-button {
+    background: #F7C9F3;
+}
+.dialog-button:hover {
+    outline: 1px dotted black;
+    outline-offset: -4px;
+}
+.captura-dialog {
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+.camera-image {
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+.img-cont:hover {
+    outline: 1px dotted black;
+    outline-offset: -4px;
+    box-shadow: inset -3px -3px 0 0 #B4B4B4, inset 3px 3px 0 0 #FFFFFF;
+}
+.captura-button {
+    background: #EE3EFE;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    color: white;
+    cursor: pointer;
+}
+.camera-button {
+    background: #EE3EFE;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    cursor: pointer;
+}
+.camera {
+    height: 18px;
+    width: 18px;
+    background-image: url(../img/camera_light.svg);
+}
+.captura-button-both:hover .captura-button {
+    outline: 1px dotted white;
+    outline-offset: -4px;
+}
+.captura-button-both:hover .camera-button {
+    outline: 1px dotted white;
+    outline-offset: -4px;
+}
+.end-captura-button {
+    background: #FF6161;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+    color: white;
+    cursor: pointer;
+}
+.recording-button {
+    background: #FF6161;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+    cursor: pointer;
+}
+.end-captura-button-both:hover .end-captura-button {
+    outline: 1px dotted black;
+    outline-offset: -4px;
+}
+.end-captura-button-both:hover .recording-button {
+    outline: 1px dotted black;
+    outline-offset: -4px;
+}
+.counter {
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+.play-button {
+    background: #EE3EFE;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+.play {
+    width: 6px;
+    height: 10px;
+    background-image: url(../img/forward_light.svg);
+}
+.lapse-bar {
+    background: #999999;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+.active {
+    background: #EE3EFE;
+}
+.upload-bar {
+    background: #999999;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+.success-dialog {
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+.arrow-back {
+    background-image: url(../img/arrow_light.svg);
+}

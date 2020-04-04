@@ -1,0 +1,276 @@
+
+body {
+    background: #FFF4FD;
+}
+.gradient {
+    background: linear-gradient(270deg, #F7C9F3, #4180F6);
+}
+.main-title-bar {
+    color: white;
+    box-shadow: 0px 1px 0px 0px #110038, 0px -1px 0px 0px #FFF4FD;
+}
+.title-bar {
+    background: linear-gradient(270deg , #F7C9F3, #4180F6);
+    color: white;
+}
+.logo {
+    background-image: url(../img/gifOF_logo.png);
+}
+.button {
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    cursor: pointer;
+}
+.button:hover {
+    background: #E6BBE2;
+    outline: 1px dotted black;
+    outline-offset: -4px;
+}
+.elegir-both:hover .elegir {
+    background: #E6BBE2;
+    outline: 1px dotted black;
+    outline-offset: -4px;
+}
+.elegir-both:hover .arrow {
+    background: #E6BBE2;
+    outline: 1px dotted black;
+    outline-offset: -4px;
+}
+.mis-guifos:hover {
+    outline: 1px dotted black;
+}
+.mis-guifos:active {
+    color: #B4B4B4;
+    outline: none;
+}
+.search-bar {
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+.search-bar-title {
+    color: white;
+    box-shadow: inset -2px 0px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+.search-input {
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset 2px 2px 0px 0px #000000, inset -2px -2px 0px 0px #E6E6E6;
+}
+.search-input::placeholder {
+    color: #B4B4B4;
+}
+.disabled {
+    background: #E6E6E6;
+    border: 1px solid #808080;
+    box-shadow: inset 1px 1px 0px 0px #FFFFFF, inset -1px -1px 0px 0px #B4B4B4;
+    color: #B4B4B4;
+}
+.enabled {
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset 1px 1px 0px 0px #FFFFFF, inset -1px -1px 0px 0px #997D97;
+    color: #110038;
+    cursor:pointer;
+}
+.lupa-enabled {
+    background-image: url(../img/lupa.svg);
+}
+.lupa-disabled {
+    background-image: url(../img/lupa_inactive.svg);
+}
+.enabled:hover {
+    background: #E6BBE2;
+    outline: 1px dotted black;
+    outline-offset: -4px;
+}
+.extension-button {
+    background: #F0F0F0;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+.extension-button:hover {
+    outline: 1px dotted black;
+    outline-offset: -4px;
+    background: #DBDBDB;
+}
+.dropdown {
+    border-bottom: 2px solid #B4B4B4;
+    border-right: 2px solid #B4B4B4;
+    border-top: 2px solid #FFFFFF;
+    border-left: 2px solid #FFFFFF;
+    background-color: #E6E6E6;
+}
+.dropdown-button {
+    background: #F0F0F0;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    cursor: pointer;
+}
+.dropdown-button:hover {
+    background: #FFF4FD;
+    border: 1px solid #CCA6C9;
+    box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+}
+.arrow-img {
+    width: 10px;
+    height: 6px;
+    background-image: url(../img/dropdown.svg);
+}
+.extension-button {
+    background: #F0F0F0;
+}
+.subtitle-bar {
+    background: #FFFAFE;
+    border: 1px solid #E6BBE2;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+}
+.gif-title {
+    border-bottom: 3px solid #E6E6E6;
+}
+.suggested-item {
+    background-color: #E6E6E6;
+    border-top: 2px solid #FFFFFF;
+    border-left: 2px solid #FFFFFF;
+    border-bottom: 2px solid #B4B4B4;
+    border-right: 2px solid #B4B4B4;
+}
+.hashtag {
+    background: #4180F6;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -1px -1px 0 0 #284F99, inset 1px 1px 0 0 #FFFFFF;
+}
+.hashtag:hover {
+    outline: 1px dotted black;
+    outline-offset: -4px;
+    background: #3A72DB;
+}
+.ver-mas-button {
+    background: #4180F6;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -1px -1px 0 0 #284F99, inset 1px 1px 0 0 #FFFFFF;
+}
+.ver-mas-button:hover {
+    outline: 1px dotted black;
+    outline-offset: -4px;
+    background: #3A72DB;
+}
+.confirm-dialog {
+    background: #E6E6E6;
+    box-shadow:inset -2px -2px 0 0 #B4B4B4,inset 2px 2px 0 0 #FFFFFF;
+}
+.dialog-title-bar {
+    margin: 2px 2px 0 2px;
+}
+.dialog-button {
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    cursor: pointer;
+}
+.light-button {
+    background: #FFF4FD;
+}
+.light-button:hover {
+    background: #F0E5EE;
+}
+.strong-button {
+    background: #F7C9F3;
+}
+.dialog-button:hover {
+    outline: 1px dotted black;
+    outline-offset: -4px;
+}
+.captura-dialog {
+    background: #E6E6E6;
+    box-shadow:inset -2px -2px 0 0 #B4B4B4,inset 2px 2px 0 0 #FFFFFF;
+}
+.camera-image {
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+.img-cont:hover {
+    outline: 1px dotted black;
+    outline-offset: -4px;
+    box-shadow: inset -3px -3px 0 0 #B4B4B4, inset 3px 3px 0 0 #FFFFFF;
+}
+.captura-button {
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    cursor: pointer;
+}
+.camera-button {
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    cursor: pointer;
+}
+.camera {
+    height: 18px;
+    width: 18px;
+    background-image: url(../img/camera.svg);
+}
+.captura-button-both:hover .captura-button {
+    outline: 1px dotted black;
+    outline-offset: -4px;
+}
+.captura-button-both:hover .camera-button {
+    outline: 1px dotted black;
+    outline-offset: -4px;
+}
+.end-captura-button {
+    background: #FF6161;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+    color: white;
+    cursor: pointer;
+}
+.recording-button {
+    background: #FF6161;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+    cursor: pointer;
+}
+.end-captura-button-both:hover .end-captura-button {
+    outline: 1px dotted black;
+    outline-offset: -4px;
+}
+.end-captura-button-both:hover .recording-button {
+    outline: 1px dotted black;
+    outline-offset: -4px;
+}
+.counter {
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+.play-button {
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+.play {
+    width: 6px;
+    height: 10px;
+    background-image: url(../img/forward.svg);
+}
+.lapse-bar {
+    background: #999999;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+.active {
+    background: #F7C9F3;
+}
+.upload-bar {
+    background: #B4B4B4;
+    box-shadow: inset 2px 2px 0 0 #000000, inset -2px -2px 0 0 #FFFCFC;
+}
+.success-dialog {
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+.arrow-back {
+    background-image: url(../img/arrow.svg);
+}
