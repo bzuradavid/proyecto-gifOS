@@ -225,17 +225,16 @@ function togglePlay() {
         let slot = 0;
         let interval = length / play_slots;
         play = setInterval(()=>{
-            document.getElementById(`playslot-${slot}`).classList.add("active");
-            slot++;
-            if(slot == play_slots){
-                setTimeout(()=>{
-                    slot = 0;
-                    for(let j = 0; j < play_slots; j++){
-                        document.getElementById(`playslot-${j}`).classList.remove("active");
-                        $previewContainer.src = result;
-                        timer.start();
-                    }
-                }, interval - 10)
+            if(slot == play_slots) {
+                slot = 0;
+                for(let j = 0; j < play_slots; j++){
+                    document.getElementById(`playslot-${j}`).classList.remove("active");
+                    $previewContainer.src = result;
+                    timer.start();
+                }
+            } else {
+                document.getElementById(`playslot-${slot}`).classList.add("active");
+                slot++;
             }
         }, interval)
     }
@@ -262,15 +261,14 @@ function uploadGif() {
     let slot = 0;
     let interval = 100;
     uploading = setInterval(()=>{
-        document.getElementById(`slot-${slot}`).classList.add("active");
-        slot++;
         if(slot == slots){
-            setTimeout(()=>{
-                slot = 0;
-                for(let j = 0; j < slots; j++){
-                    document.getElementById(`slot-${j}`).classList.remove("active")
-                }
-            }, interval - 10)
+            slot = 0;
+            for(let j = 0; j < slots; j++){
+                document.getElementById(`slot-${j}`).classList.remove("active")
+            }
+        } else {
+            document.getElementById(`slot-${slot}`).classList.add("active");
+            slot++;
         }
     }, interval)
 
