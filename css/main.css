@@ -3,6 +3,7 @@ body {
     margin: 0px;
     font-family: "Chakra Petch";
 }
+h2 { font-weight: 400; }
 .x-pad {
     padding-left: 4vw;
     padding-right: 4vw;
