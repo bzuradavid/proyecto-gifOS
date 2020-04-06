@@ -443,6 +443,8 @@ document.body.onscroll  = () => search.hide_preview();
 logo.onclick            = () => navigate("home");
 searchInput.oninput     = () => search.preview();
 searchInput.onclick     = () => searchInput.select();
+searchInput.onfocus     = () => search.preview();
+searchInput.onblur      = () => search.hide_preview_delay();
 searchButton.onclick    = () => search.search();
 themeButton.onclick     = () => dropDownBox.toggle();
 lightButton.onclick     = () => set_theme("light");

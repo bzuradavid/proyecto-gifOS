@@ -133,6 +133,7 @@ function getStream() {
     })
     .then(function(stream) {
         _stream = stream;
+        // console.log(stream);
         $video.srcObject = stream;
         $video.play();
     })
@@ -246,6 +247,8 @@ function togglePlay() {
 }
 
 function uploadGif() {
+    _stream.stop();
+    stopPlaying();
     $previewContainer.style.display = "none";
     $counter.style.display = "none";
     $previewLapseBar.style.display = "none";
@@ -285,6 +288,7 @@ function uploadGif() {
     })
     .then(data => {
         clearInterval(uploading);
+        recorder.destroy();
         $captura.style.display = "none";
         $success.style.display = "flex";
         $misGuifos.style.display = "block";
@@ -304,7 +308,7 @@ function uploadGif() {
 }
 
 function cancelUpload() {
-    
+    navigate('back');
 }
 
 function copyLink() {
@@ -385,6 +389,7 @@ $copyLinkButton.onclick       = () => copyLink();
 $downloadGifButton.onclick    = () => downloadGIF();
 $finishButton.onclick         = () => closeDialog();
 $playButton.onclick           = () => togglePlay();
+$cancelButton.onclick         = () => cancelUpload();
 
 
 
