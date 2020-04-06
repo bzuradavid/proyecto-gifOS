@@ -173,21 +173,16 @@ function startRecording() {
 }
 
 function stopRecording() {
-    // console.log(recorder.state);
     if(status == 'recording'){
         end = Date.now();
         status = 'stopped';
         recorder.stopRecording(recording => {timer.stop(); result = recording;});
         length = end - start - 390;
-        // length = length * 0.85;
-        // alert(length);
         $video.style.display = "none";
         $previewContainer.style.display = "block";
-        // $previewContainer.src = result;
         $endCapturaButton.style.display = "none";
         $afterCapturaButtons.style.display = "flex";
         $previewLapseBar.style.display = "flex";
-        // console.log("recording-stopped");
         $dialogTitle.innerHTML = "Vista previa";
         togglePlay();
     }
