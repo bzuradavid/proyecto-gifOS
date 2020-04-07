@@ -177,7 +177,7 @@ body {
     background: #CE36DB;
 }
 .dialog-button:hover {
-    outline: 1px dotted black;
+    outline: 1px dotted white;
     outline-offset: -4px;
 }
 .captura-dialog {
