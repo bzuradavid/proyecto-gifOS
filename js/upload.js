@@ -17,13 +17,13 @@ for(let i = 0; i < play_slots; i++){
     document.getElementById('lapse-bar').innerHTML += `<div id="playslot-${i}" class="lapse-bar-step"></div>`
 }
 
-api = {
+const api = {
     url: 'https://api.giphy.com/v1/gifs',
     uploadURL: 'https://upload.giphy.com/v1/gifs',
     key: 'Zf45k9BsM730LcwnDxXFg7oesOYPcWBq'
 }
 
-timer = {
+const timer = {
     d: 0,
     h: 0,
     m: 0,
@@ -56,7 +56,7 @@ timer = {
     }
 }
 
-misGuifos = {
+const misGuifos = {
     items: [],
     container: document.getElementById('mis-guifos-container'),
     show_items() {

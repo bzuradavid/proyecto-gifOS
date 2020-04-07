@@ -2,13 +2,13 @@
 // APP OBJECT MODEL ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-api = {
+const api = {
     url: 'https://api.giphy.com/v1/gifs',
     key: 'Zf45k9BsM730LcwnDxXFg7oesOYPcWBq'
 }
 
 
-searchBar = {
+const searchBar = {
     show(){
         searchBarContainer.style.display = "block";
     },
@@ -17,7 +17,7 @@ searchBar = {
     }
 }
 
-home = {
+const home = {
     display() {
         homeSection.style.display = "block";
         suggested.display();
@@ -25,7 +25,7 @@ home = {
     } 
 }
 
-dropDownBox = {
+const dropDownBox = {
     hidden: true,
     show(){
         dropdown.style.display = "flex";
@@ -48,7 +48,7 @@ dropDownBox = {
     }
 }
 
-suggested = {
+const suggested = {
     item: {},
     items: [],
     container: document.getElementById('suggested-container'),
@@ -113,7 +113,7 @@ suggested = {
     }
 }
 
-trending = {
+const trending = {
     items: [],
     container: document.getElementById('trending-container'),
     display(){
@@ -149,7 +149,7 @@ trending = {
     }
 }
 
-search = {
+const search = {
     term: "",
     items: [],
     container: document.getElementById('search-container'),
@@ -288,7 +288,7 @@ search = {
     }
 }
 
-misGuifos = {
+const misGuifos = {
     items: [],
     container: document.getElementById('mis-guifos-container'),
     display () {
