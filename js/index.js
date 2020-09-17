@@ -439,18 +439,18 @@ const createButton       = document.getElementById('crear-guifos');
 // EVENT LISTENERS ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-document.body.onscroll  = () => search.hide_preview();
 logo.onclick            = () => navigate("home");
+document.body.onscroll  = () => search.hide_preview();
 searchInput.oninput     = () => search.preview();
 searchInput.onclick     = () => searchInput.select();
 searchInput.onfocus     = () => search.preview();
 searchInput.onblur      = () => search.hide_preview_delay();
+searchInput.onkeydown   = (event) => {retrieve_key(event)}
+searchInput.onkeyup     = () => {search.set_button_state()}
 searchButton.onclick    = () => search.search();
 themeButton.onclick     = () => dropDownBox.toggle();
 lightButton.onclick     = () => set_theme("light");
 darkButton.onclick      = () => set_theme("dark");
-searchInput.onkeydown   = (event) => {retrieve_key(event)}
-searchInput.onkeyup     = () => {search.set_button_state()}
 misGuifosButton.onclick = () => navigate("mis-guifos");
 createButton.onclick    = () => navigate("create");
 

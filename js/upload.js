@@ -371,18 +371,18 @@ const $canvas                 = document.getElementById('canvas');
 
 
 
-$arrowBack.onclick            = () => navigate('back');
-$dialogButtonCancel.onclick   = () => navigate('back');
 $dialogButtonStart.onclick    = () => navigate('captura');
+$cancelButton.onclick         = () => cancelUpload();
+$arrowBack.onclick            = () => navigate('back');
 $capturaButton.onclick        = () => startRecording();
+$copyLinkButton.onclick       = () => copyLink();
 $endCapturaButton.onclick     = () => stopRecording();
 $repeatCapturaButton.onclick  = () => repeatCaptura();
 $uploadCapturaButton.onclick  = () => uploadGif();
-$copyLinkButton.onclick       = () => copyLink();
+$dialogButtonCancel.onclick   = () => navigate('back');
 $downloadGifButton.onclick    = () => downloadGIF();
 $finishButton.onclick         = () => closeDialog();
 $playButton.onclick           = () => togglePlay();
-$cancelButton.onclick         = () => cancelUpload();
 
 
 

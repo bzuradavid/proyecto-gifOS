@@ -37,6 +37,11 @@ h2 { font-weight: 400; }
     height: 48px;
     width: 90px;
 }
+#logocontainer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 .button {
     height: 36px;
     margin-left: 16px;
@@ -143,7 +148,7 @@ h2 { font-weight: 400; }
 .img-cont {
     height: 21vw;
     width: 21vw;
-    margin: 0 1vw 2vw 1vw;
+    margin: 0 0 2vw 0;
     padding: 2px;
     box-sizing: border-box;
 }
